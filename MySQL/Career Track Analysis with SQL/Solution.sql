@@ -22,9 +22,9 @@ SELECT
 FROM (
 	-- Subquery to calculate track completion details
 	SELECT 
-		student_id,
-		track_name,
-		date_enrolled,
+		e.student_id,
+		i.track_name,
+		e.date_enrolled,
 		ROW_NUMBER () OVER (ORDER BY e.student_id, i.track_name) AS student_track_id, -- Generating a unique identifier for each student's track enrollment
 		IF(date_completed IS NULL,0, 1 ) AS track_completed, -- Indicator if the track is completed or not (1 for completed, 0 for not completed)
 		DATEDIFF(e.date_completed, e.date_enrolled) AS days_for_completion -- Calculating the number of days taken to complete the track
