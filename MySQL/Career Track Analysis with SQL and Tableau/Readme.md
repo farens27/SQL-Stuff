@@ -1,5 +1,22 @@
 # 💼 Career Track Analysis
 
+## 📝 Case Description
+One of the functionalities the 365 company introduced in a 2021 platform release included the option for student enrollment in a career track. The tracks represent an ordinal sequence of courses that eventually lead to obtaining the skills for one of three job titles: data scientist, data analyst, or business analyst.
+
+Completing a career track on the platform is a challenging task. To acquire a corresponding career certificate, a student must pass nine-course exams (seven compulsory and two elective courses) and sit for a career track exam encompassing topics from all seven required courses.
+
+In this Career Track Analysis with SQL and Tableau project, you’re tasked with analyzing the career track enrollments and achievements of 365’s students. You’ll first need to retrieve the necessary information from an SQL database. Afterward, you’ll feed this information to Tableau, visualize the results, and finally interpret them.
+
+##  Metadata
+* track_id =>  the unique identification of a track, which serves as the primary key to the table.
+* track_name => the name of the track.
+* student_id => the unique identification of a student.
+* date_enrolled => the date the student enrolled in the track. A student can enroll in more than one career track.
+* date_completed =>  the date the student completed the track. If the track is not completed, the field is NULL.
+
+##  Data Set
+Career track enrollments of 365's students [data](https://github.com/farens27/SQL-Stuff/blob/main/MySQL/Career%20Track%20Analysis%20with%20SQL%20and%20Tableau/Career%20Track%20Data.sql)
+
 ## 💡 Solution
 
 ### 1. Start with a subquery that joins the tables career_track_student_enrollments and career_track_info based on the common column, track_id. Select the appropriate columns from this join and create three new columns: student_track_id, track_completed, and days_for_completion.
