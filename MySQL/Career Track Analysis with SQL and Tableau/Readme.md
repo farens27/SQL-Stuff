@@ -93,7 +93,7 @@ FROM
 **Below is the full query for the task:**
 
 ````sql
-USE solution;
+USE career_track_data;
 
 SELECT
   student_track_id,
