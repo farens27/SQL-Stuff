@@ -93,7 +93,7 @@ FROM
 **Below is the full query for the task:**
 
 ````sql
-USE sql_and_tableau;
+USE solution;
 
 SELECT
   student_track_id,
