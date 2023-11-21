@@ -1,4 +1,4 @@
-USE solution;
+USE career_track_data;
 
 -- Selecting relevant columns for analysis
 SELECT
