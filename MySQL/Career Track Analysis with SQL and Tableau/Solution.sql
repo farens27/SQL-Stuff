@@ -1,4 +1,4 @@
-USE sql_and_tableau;
+USE solution;
 
 -- Selecting relevant columns for analysis
 SELECT
