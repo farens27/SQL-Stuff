@@ -15,7 +15,7 @@ In this Career Track Analysis with SQL and Tableau project, you’re tasked with
 * date_completed =>  the date the student completed the track. If the track is not completed, the field is NULL.
 
 ## 📁 Data Set
-Career track enrollments of 365's students [data](https://github.com/farens27/SQL-Stuff/blob/main/MySQL/Career%20Track%20Analysis%20with%20SQL%20and%20Tableau/Career%20Track%20Data.sql)
+Career track enrollments of 365's students [data](https://github.com/farens27/SQL-Stuff/blob/main/MySQL/Career%20Track%20Analysis%20with%20SQL%20and%20Tableau/career_track_data.sql)
 
 ## 🔧 Tools
 * MySQL 8.0.35 for data analysis - View [SQL Scripts](https://github.com/farens27/SQL-Stuff/blob/main/MySQL/Career%20Track%20Analysis%20with%20SQL%20and%20Tableau/Solution.sql)
