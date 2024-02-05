@@ -10,6 +10,15 @@ Analyze a dataset of vehicle accidents to understand their characteristics and i
 ## 🔧 Tools
 Microsoft SQL Server 2022 for data analysis - View [SQL Scripts](https://github.com/farens27/SQL-Stuff/blob/main/Microsoft%20SQL%20Server/Vehicle%20Accident%20Analysis/Vehicle%20Accident%20Analysis.sql)
 
+##  🔎 Findings
+- Most accidents occur in urban areas compared to rural areas
+- Friday has the highest number of accidents with 12,937
+- Motorcycles (>125cc) have the highest average age (10 years), while mobility scooters have the youngest average age (2 years).
+- Old age group vehicles (6-10 years old) have the highest number of accidents, followed by New age group vehicles (0-5 years old) and Regular age group vehicles (over 10 years old) with the lowest number of accidents.
+- Most accidents occur when weather conditions are fine no high winds.
+- Most accidents occur on the right-hand side of the vehicle compared to the left-hand side of the vehicle.
+- Most accidents occur when the journey's purpose is not known
+
 ## 💡 Solution
 
 ### 1. How many accidents have occurred in urban areas versus rural areas?
@@ -23,6 +32,9 @@ FROM
 GROUP BY
 	Area
 ````
+![Capture](https://github.com/farens27/SQL-Stuff/assets/60220519/8dc19782-5cb2-4ef9-b953-97ba86533a79)
+
+There have been 58,533 accidents in urban areas and 21,999 accidents in rural areas. This means that there have been more than twice as many accidents in urban areas compared to rural areas.
 
 ### 2. Which day of the week has the highest number of accidents?
 
@@ -37,6 +49,7 @@ GROUP BY
 ORDER BY
 	'Total Accidents' DESC
 ````
+![Capture](https://github.com/farens27/SQL-Stuff/assets/60220519/a3ab0f62-ddf1-4fa7-8147-c06b8e10abc3)
 
 ### 3. What is the average age of vehicles involved in accidents based on their type?
 
@@ -54,6 +67,7 @@ GROUP BY
 ORDER BY
 	'Total Accidents' DESC
 ````
+![Capture](https://github.com/farens27/SQL-Stuff/assets/60220519/2f89263b-c534-4080-95b1-32b2b77df1e5)
 
 ###  4. Can we identify any trends in accidents based on the age of vehicles involved?
 
@@ -77,6 +91,7 @@ FROM (
 GROUP BY
 	AgeGroup
 ````
+![Capture](https://github.com/farens27/SQL-Stuff/assets/60220519/f864e908-03fa-4a6a-8af9-ad9425c55ed0)
 
 ### 5. Are there any specific weather conditions that contribute to severe accidents?
 
@@ -96,6 +111,7 @@ GROUP BY
 ORDER BY
 	'Total Accidents' DESC
 ````
+![Capture](https://github.com/farens27/SQL-Stuff/assets/60220519/d34764f8-4fd9-4e9c-bf55-3aa1114520ee)
 
 ### 6. Do accidents often involve impacts on the left-hand side of vehicles?
 
@@ -110,6 +126,7 @@ GROUP BY
 HAVING
 	LeftHand IS NOT NULL
 ````
+![Capture](https://github.com/farens27/SQL-Stuff/assets/60220519/63d903b7-9cbb-4769-9c2d-c13ff04b8c5f)
 
 ### 7. Is there any relationship between journey purposes and the severity of accidents?
 
