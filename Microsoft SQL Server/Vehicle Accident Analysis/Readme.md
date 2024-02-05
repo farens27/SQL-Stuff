@@ -17,7 +17,7 @@ Microsoft SQL Server 2022 for data analysis - View [SQL Scripts](https://github.
 - Old age group vehicles (6-10 years old) have the highest number of accidents, followed by New age group vehicles (0-5 years old) and Regular age group vehicles (over 10 years old) with the lowest number of accidents.
 - Most accidents occur when weather conditions are fine no high winds.
 - Most accidents occur on the right-hand side of the vehicle compared to the left-hand side of the vehicle.
-- Most accidents occur when the journey's purpose is not known
+- Most accidents occur when the journey's purpose is not known.
 
 ## 💡 Solution
 
@@ -181,3 +181,4 @@ HAVING
 	AND 
 	v.PointImpact = @Impact
 ````
+![Capture](https://github.com/farens27/SQL-Stuff/assets/60220519/46ee1a89-26bf-4ece-92b2-113896c28d61)
